@@ -42,6 +42,7 @@ export function setMinutes () {
     if (event.key === "Enter") {
       updateDisplay()
       el.minutes.removeAttribute('contenteditable')
+      el.minutes.blur()
     }
 
   })
